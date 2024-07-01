@@ -1,0 +1,63 @@
+/* Helper */
+* {
+  outline: 1px solid red;
+}
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Variables */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  scrollbar-width: none;
+  overflow-x: hidden;
+
+  font-size: 1.6rem;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+.container-responsive {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: cornflowerblue;
+  padding: 3rem;
+  margin: 2rem;
+}
+
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  background-color: darkorange;
+  color: white;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-responsive {
+    flex-direction: column;
+  }
+}

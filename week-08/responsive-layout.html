@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="./styles/responsive-layout.css">
+</head>
+
+<body>
+    <div class="container-responsive">
+        <header>
+            <h1>Responsive layout</h1>
+        </header>
+ 
+        <main>
+            <!-- Responsive picture element with multiple image sources. -->
+            <picture>
+                <!-- For browsers larger than 960px. -->
+                <source media="(min-width: 960px)" srcset="./images/reponsive-pc.webp">
+ 
+                <!-- For browsers lareger then 480px. -->
+                <source media="(min-width: 480px)" srcset="./images/responsive-mobile.webp">
+ 
+                <!-- The "img" element is used by browsers that do not support the "picture" element, or if none of the "source" tags match. -->
+                <img src="./images/image-placeholder.webp" alt="image placeholder, responsive image">
+            </picture>
+        </main>
+ 
+        <footer>
+            <h2>Everythig is possible. The sky is the limit!</h2>
+        </footer>
+    </div>
+</body>
+ 
+</html>

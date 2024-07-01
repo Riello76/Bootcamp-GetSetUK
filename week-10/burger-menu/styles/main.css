@@ -1,0 +1,134 @@
+/* Apply box-sizing: border-box to all elements and their pseudo-elements,
+   ensuring padding and borders are included in the element's total width and height */
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box; /* For older WebKit browsers */
+     margin: 0;
+     padding: 0;
+   }
+   
+   /* Set the base font size to 62.5% of the default size (usually 16px), 
+      making 1rem equal to 10px for easier rem calculations */
+   html {
+     font-size: 62.5%;
+   }
+   
+   /* Set the body to occupy the full viewport height and width, and ensure 
+      there's no horizontal overflow. Set the default font size and family */
+   body {
+     height: 100vh;
+     max-height: 100%;
+     width: 100vw;
+     max-width: 100%;
+     scrollbar-width: none; /* Firefox-specific property to hide scrollbar */
+     overflow-x: hidden;
+     font-size: 1.6rem; /* 16px */
+     font-family: Arial, sans-serif;
+   }
+   
+   /* Outline all elements with a red border for debugging */
+   * {
+     outline: 1px solid red;
+   }
+   
+   /* Style the header to be a flex container, with space between items and 
+      centered vertically. Apply padding and background color */
+   header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 2rem;
+     background-color: #333;
+     color: white;
+   }
+   
+   /* Set the logo font size */
+   .logo {
+     font-size: 2.4rem;
+   }
+   
+   /* Style the navigation as a flex container, positioned relative, and justified to the right */
+   nav {
+     display: flex;
+     align-items: center;
+     position: relative;
+     width: 100%;
+     justify-content: flex-end;
+   }
+   
+   /* Initially hide the menu and style it as a list without bullets, positioned absolutely below the nav */
+   .menu {
+     display: none;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     background-color: #333;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+   }
+   
+   /* Align menu list items to the right */
+   .menu li {
+     text-align: right;
+   }
+   
+   /* Style the menu links with white text, no underline, and block-level padding */
+   .menu li a {
+     color: white;
+     text-decoration: none;
+     display: block;
+     padding: 1rem 2rem;
+   }
+   
+   /* Style the burger menu icon as a flex container with vertical spacing,
+      size it appropriately, and make it cursor interactive */
+   .burger-menu {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     width: 3rem;
+     height: 3rem;
+     cursor: pointer;
+   }
+   
+   /* Style the lines of the burger menu icon */
+   .burger-menu .line {
+     width: 100%;
+     height: 0.3rem;
+     background-color: white;
+   }
+   
+   /* For screens 48rem (480px) and wider, display the menu flexibly and 
+      position it statically, hide the burger menu */
+   @media (min-width: 48rem) {
+     .menu {
+       display: flex;
+       position: static;
+       width: auto;
+     }
+     .menu li {
+       text-align: left;
+     }
+     .burger-menu {
+       display: none;
+     }
+   }
+   
+   /* For screens 64rem (640px) and wider, make the header sticky at the top with a high z-index */
+   @media (min-width: 64rem) {
+     header {
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+     }
+   }
+   
+   /* Class to show the menu (typically when toggled by JavaScript) */
+   .menu.show-menu {
+     display: block;
+   }
+   

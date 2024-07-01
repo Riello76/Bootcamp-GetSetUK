@@ -1,0 +1,95 @@
+/* HELPER */
+/* * {
+  outline: 1px solid red;
+} */
+ 
+/* CSS RESET */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+ 
+html {
+  /* Set root font-size for rem to 62.5% to change the font-size default value to 10px. */
+  font-size: 62.5%;
+}
+ 
+/* RESET TYPOGRPAHY */
+body {
+  /* Set font-size back to it's original 16px by using 1.6rem. */
+  font-size: 1.6rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+ 
+/* TYPOGRPAHY */
+h3 {
+  letter-spacing: 0.1rem;
+  font-size: 2.2rem;
+  padding: 2rem 0;
+}
+ 
+p {
+  font-size: 1.8rem;
+  padding: 0.2rem 0;
+}
+ 
+/* RESET IMG and PICTURE ELEMENTS */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+ 
+.card {
+  max-width: 30rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0rem 5rem 5rem gray;
+  margin: 2rem;
+}
+ 
+.card img {
+  border-radius: 2rem 2rem 0 0;
+}
+ 
+.info {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+ 
+button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  /* This is related to pseudo class button:after. */
+  /* position: relative; */
+}
+ 
+/* button:after {
+  position: absolute;
+  content: "3";
+  top: 50;
+  left: 50;
+  background-color: blue;
+} */
+ 

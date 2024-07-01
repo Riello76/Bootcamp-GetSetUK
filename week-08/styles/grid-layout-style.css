@@ -1,0 +1,41 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+  /* outline: 1px solid red; */
+}
+
+.header {
+  grid-area: header;
+}
+.menu {
+  grid-area: menu;
+}
+.main {
+  grid-area: main;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu . header header . aside"
+    "menu main main main main aside"
+    "footer footer footer footer footer aside";
+  gap: 0.5rem;
+  background-color: midnightblue;
+  padding: 0.5rem;
+}
+.grid-container > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 0.5rem;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+
+<body>
+
+   <input type="button" value="Page 1" id="btn1">
+   <input type="button" value="Page 2" id="btn2">
+
+   <script>
+    const Pagina1 = document.getElementById("btn1");
+    const Pagina2 = document.getElementById("btn2");
+
+    Pagina1.addEventListener("click", function(){
+      window.open("\carousel.html");
+    })
+    Pagina2.addEventListener("click", function() {
+        window.open("\if-statement.html")
+    })
+
+   </script>
+  
+
+
+
+
+
+    <!-- <input type="button" value="Click me!" id="buy_tickets_btn">
+ 
+    <script>
+        const linkedinBtn = document.getElementById("buy_tickets_btn");
+ 
+        linkedinBtn.addEventListener("click", function () {
+ 
+            // <a href="https://www.linkedin.com/" target="_blank"></a>
+            window.open("https://www.linkedin.com/", "_blank");
+            document.getElementById("buy_tickets_btn").value = "Thank you!";
+        });
+    </script> -->
+</body>
+
+</html>

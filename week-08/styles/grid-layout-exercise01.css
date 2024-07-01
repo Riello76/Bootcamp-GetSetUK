@@ -1,0 +1,51 @@
+body {
+  background-color: white;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "area-1 area-1 area-1"
+    "area-2 area-3 area-4"
+    "area-2 area-5 area-5"
+    "area-6 area-6 area-7"
+    "area-8 area-8 area-8";
+  gap: 0.2rem;
+}
+.child-1 {
+  grid-area: area-1;
+  background-color: brown;
+}
+.child-2 {
+  grid-area: area-2;
+  background-color: blue;
+}
+.child-3 {
+  grid-area: area-3;
+  background-color: cadetblue;
+}
+.child-4 {
+  grid-area: area-4;
+  background-color: cornflowerblue;
+}
+.child-5 {
+  grid-area: area-5;
+  background-color: darkgoldenrod;
+}
+.child-6 {
+  grid-area: area-6;
+  background-color: darkmagenta;
+}
+.child-7 {
+  grid-area: area-7;
+  background-color: darkgreen;
+}
+.child-8 {
+  grid-area: area-8;
+  background-color: rgb(255, 0, 115);
+}
+.grid-container > div {
+  text-align: center;
+  padding: 0.5rem;
+}
