@@ -1,0 +1,39 @@
+
+:root {
+  font-size: 16px;
+  line-height: 1.5;
+  --global-padding: 10px;
+ 
+  --background-color: green;
+  --text-color: red;
+  --text-color: orange;
+  --link-color: blue;
+ 
+  --default-font: Verdana, Geneva, Tahoma, sans-serif;
+  --heading-font: Arial;
+ 
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+ 
+  font-size: 100%;
+  line-height: 1.6;
+ 
+  --main-padding: 20px;
+  --font-size: 16px;
+}
+ 
+body {
+  font-family: var(--default-font);
+}
+ 
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: var(--heading-font);
+}
+ 

@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(199, 176, 220);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-div {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.container {
+  background-image: url(../images/keychains.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  font-size: 30px;
+  color: blueviolet;
+}
+.btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.btn-left{
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    color: blueviolet;
+    border: none;
+    border: 2px solid blueviolet;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.btn-right{
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}

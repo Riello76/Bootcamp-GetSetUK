@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Intro</title>
+    <link rel="stylesheet" href="./styles/intro.css">
+</head>
+
+<body>
+
+    <h1>Cascading Style Sheet (CSS)</h1>
+    <p>
+        CSS is used to style and HTML document. CSS define how HTML elements /
+        document is displayed. Also, CSS can be used for styling the print version
+        of the HTML document.
+    </p>
+
+    <h3>How to include CSS in HTML document</h3>
+    <ol>
+        <li>
+            External CSS -
+            <b>This is the proper way.</b>
+        </li>
+        <li>
+            Internal CSS - in the head part of the HTML document,
+            <b>avoid this practise</b>
+        </li>
+        <li>Inline CSS - <b>avoid this practise</b></li>
+    </ol>
+
+    <h3>Example of inline CSS</h3>
+    <p style="color: blue; background-color: yellow">
+        This is a paragraph that is styled by inline CSS
+    </p>
+
+    <h3>Example of internal CSS</h3>
+    <p>
+        Please check the "style" element in the "head" part of HTML document to
+        see more.
+    </p>
+
+    <h3>Example of external CSS</h3>
+    <p>
+        The external CSS file has to end with .css extension. The CSS file contain
+        only pure CSS not any HTML tags. Please check the link to external CSS
+        file in the "head" part of the HTML document. Please be aware that the
+        link(s) to CSS external file(s) has to be always placed after "title" HTML
+        element!
+    </p>
+
+    <hr />
+
+    <h3>CSS syntax</h3>
+    <p>Please go to style.css file to inspect the CSS syntax.</p>
+
+    <hr />
+
+    <h3>CSS selectors</h3>
+    <p>You have 5 options on how to use CSS selectors:</p>
+    <ul>
+        <li>Use CSS element selector</li>
+        <li>Use CSS class selector</li>
+        <li>Use CSS ID selector</li>
+        <li>Use CSS group selector</li>
+        <li>
+            Use CSS universal selector - mainly used for reset HTML document and
+            debugging.
+        </li>
+    </ul>
+
+    <h4>CSS element selector</h4>
+    <i>Example: p { color: darkblue; }</i>
+
+    <p>
+        Here the "p" CSS element selector will style ALL paragraphs in entire HTML
+        document. All paragraphs will inherit darkblue colour.
+    </p>
+
+    <h4>CSS class selector</h4>
+    <i> Example: .important { color: red; font-weight: bold; } </i>
+
+    <p>
+        The CSS class starts with "." the full stop at the beginning of it's name
+        in the CSS language. The name of the class is your choice, and it should
+        be something meaningful!
+        <span class="important">
+            The class can be called on multiple HTML elements.
+        </span>
+        Please notice that when you call the class on HTML opening element "." the
+        full stop in NOT used.
+    </p>
+
+    <p class="important">
+        For instance on this specific paragraph. And span above.
+    </p>
+
+    <h4 id="sub-chapter-id">CSS ID selector</h4>
+    <i>
+        Example: #sub-chapter-id { color: white; background-color: goldenrod;
+        font-family: "Courier New", Courier, monospace; font-size: larger; }
+    </i>
+    <p>
+        The CSS ID starts with "#" the hashtag at the beginning of it's name in
+        the CSS language. The name of the ID is your choice, and it should be
+        something meaningful!
+        <b>
+            You can use ID name ONLY ONCE in HTLM document as it is Unique
+            Identifier.
+        </b>
+    </p>
+
+
+</body>
+
+</html>

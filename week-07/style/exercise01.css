@@ -1,0 +1,49 @@
+.container {
+  background-image: url(../images/mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10%;
+}
+h1 {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 43px;
+}
+h6 {
+  text-align: center;
+  margin-top: -20px;
+  
+}
+.btns-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    
+}
+.btn-left{
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    border: 2px solid white;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.btn-right{
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(31, 169, 31);
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}

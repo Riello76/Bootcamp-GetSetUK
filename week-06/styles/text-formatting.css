@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+}
+/* Variables -fonts, colours */
+
+:root {
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-text: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --font-color-text: #070707;
+  --font-color-accent: cadetblue;
+  --font-color-cite: grey;
+  --font-color-transparent: transparent;
+}
+
+/* Spacing */
+body {
+  margin: 1rem;
+  background-color: var(--background-color);
+  color: var(--font-color-text);
+  font-optical-sizing: auto;
+  font-family: var(--font-heading);
+}
+
+/* Typography */
+h1 {
+  font-size: xx-large;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+h2 {
+  font-size: x-large;
+  margin-bottom: 0.6em;
+}
+h3 {
+  font-size: large;
+  margin-bottom: 0.2em;
+}
+p {
+  font-size: medium;
+  margin-bottom: 2em;
+}
+p::first-letter {
+  font-size: large;
+  font-weight: bold;
+  background-color: var(--font-color-accent);
+  padding: 0.1em 0.3em;
+  margin-right: 0.1em;
+  border-radius: 5px;
+}
+blockquote {
+  position: relative;
+  font-size: normal;
+  font-style: italic;
+  line-height: 1.2;
+  padding-left: 3em;
+  margin-bottom: 2em;
+}
+
+blockquote::before {
+  content: "\201c";
+  display: block;
+  position: absolute;
+  left: -0.2em;
+  top: -0.2em;
+  font-size: 5em;
+  padding-left: 0.2em;
+  color: var(--font-color-accent);
+}
+
+blockquote cite {
+  display: block;
+  font-size: smaller;
+  margin-top: 0.2em;
+  color: var(--font-color-cite);
+}
+blockquote cite::before {
+  content: "\2014 \2009";
+}
+.rights,
+.rights::first-letter {
+  font-size: small;
+  text-align: right;
+  background-color: unset;
+  font-weight: unset;
+  color: var(--font-color-cite);
+}

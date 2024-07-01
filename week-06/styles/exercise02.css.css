@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+  margin: 3px;
+}
+body {
+  background-color: rgb(3, 3, 84);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-h1: white;
+  --color-h2: white;
+  --color-p: white;
+  --button-background: yellow;
+  --button-text-color: black;
+  --h1-font-size: 5em;
+  --h2-font-size: 1.3em;
+  --p-font-size: 1em;
+  --button-font-size: 0.7em;
+}
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--color-h1);
+}
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--color-h2);
+}
+p {
+  font-size: var(--p-font-size);
+  color: var(--color-p);
+  line-height: 1.5em;
+}
+span {
+  text-decoration: underline;
+}
+button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: var(--button-font-size);
+  width: 140px;
+  height: 40px;
+}

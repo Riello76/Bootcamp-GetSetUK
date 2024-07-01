@@ -1,0 +1,12 @@
+.container p {
+  color: blue;
+}
+.container > p:first-child {
+  font-weight: bold;
+}
+.container:not(.special) p {
+  background-color: red;
+}
+.container.special > h2 {
+  color: green;
+}

@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-left: 2px;
+  margin-top: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-h1: orangered;
+  --color-h2: rgb(42, 141, 255);
+  --color-p: white;
+  --color-a: rgb(42, 141, 239);
+  --color-ul: rgb(42, 141, 239);
+}
+body {
+  background-color: rgb(15, 15, 225);
+}
+h1 {
+  color: var(--color-h1);
+  font-size: xx-large;
+  margin-bottom: 0.8em;
+  margin-left: 0;
+}
+h2 {
+  font-size: larger;
+  color: var(--color-h2);
+  margin-bottom: 0.8em;
+}
+p {
+  color: var(--color-p);
+  margin-bottom: 0.8em;
+}
+a {
+  color: var(--color-a);
+  margin-bottom: 0.8em;
+}
+ul {
+  color: var(--color-ul);
+}

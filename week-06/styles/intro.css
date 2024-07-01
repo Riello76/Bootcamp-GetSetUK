@@ -1,0 +1,13 @@
+ul{
+    color: chocolate;
+}
+.important{
+    color: red;
+    font-weight: bold;
+}
+#sub-chapter-id{
+    color: green;
+    background-color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}

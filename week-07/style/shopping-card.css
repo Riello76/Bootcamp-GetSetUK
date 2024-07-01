@@ -1,0 +1,48 @@
+/* Shop background */
+.shop {
+    background-color: #f8f8f8;
+    background-image: radial-gradient(#c8c8c8 1.05px, #f8f8f8 1.05px);
+    background-size: 21px 21px;
+   
+    padding: 5px;
+  }
+
+
+
+
+/* Card */
+
+.card{
+    max-width: 300px;
+    border: 1px solid gray;
+    border-radius: 30px;
+
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray;
+    margin: 50px auto;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.info{
+    padding: 0 16px 32px 16px;
+    margin-top: -60px;
+}
+.coffee-type{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.card button{
+    width: 100%;
+    color: white;
+    background-color: #2e9576;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
