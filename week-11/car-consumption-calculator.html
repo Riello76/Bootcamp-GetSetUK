@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car consumption calculator</title>
+
+    <style>
+        label,
+        input {
+            display: block;
+        }
+
+        body {
+            background-color: cadetblue;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="consumption-form">
+        <h1>Car Consumption Calculator</h1>
+        <label for="distance">Distance traveled (km):</label>
+        <input type="text" id="distance"><br>
+        <label for="fuel">Fuel used (liters):</label>
+        <input type="text" id="fuel"><br>
+        <button type="submit">Calculate Consumption</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        const form = document.getElementById("consumption-form");
+        const distance = document.getElementById("distance");
+        const fuel = document.getElementById("fuel");
+        const result = document.getElementById("result");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const distanceValue = parseFloat(distance.value);
+            const fuelValue = parseFloat(fuel.value);
+            if (isNaN(distanceValue) || isNaN(fuelValue) || distanceValue <= 0 || fuelValue <= 0) {
+                result.textContent = "Please enter valid positive numbers for both distance and fuel.";
+            }
+            else {
+                const consumption = (fuelValue / distanceValue) * 100;
+                result.textContent = `Fuel consumption per 100 km: ${consumption.toFixed(2)} liters`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
