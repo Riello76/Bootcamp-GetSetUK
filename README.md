@@ -1,13 +1,13 @@
-# 📚 Bootcamp-GetSetUK – Data Technician Projects
+# 💻 Bootcamp-GetSetUK – Web Development Projects
 
-Welcome to my **Bootcamp-GetSetUK repository**, where I’ve documented all my projects and exercises completed during the Data Technician Bootcamp.  
-Each folder corresponds to a week of the course or to the final project.
+Welcome to my **Bootcamp-GetSetUK repository**, where I’ve documented all my projects and exercises completed during the Web Development Bootcamp.  
+Each folder corresponds to a week of the course or the final project.
 
 ---
 
 ## 🗂 Repository Structure
 
-- `final-project-template` → Template provided by the bootcamp for final project  
+- `final-project-template` → Template provided by the bootcamp for the final project  
 - `my-final-project` → My completed final project, including all deliverables  
 - `week-04` → Exercises and mini-projects from Week 4  
 - `week-05` → Exercises and mini-projects from Week 5  
@@ -22,24 +22,25 @@ Each folder corresponds to a week of the course or to the final project.
 
 ## 💡 About This Bootcamp
 
-During the **Data Technician Bootcamp**, I developed hands-on skills in:
-- **Data analysis & manipulation** → Excel, Python, Pandas  
-- **Data visualization** → Power BI, Tableau  
-- **Data management & collaboration** → Microsoft Fabric, GitHub, VS Code  
-- **Problem-solving & workflow organization** → Structured approach, attention to detail, critical thinking  
+During the **Web Development Bootcamp**, I gained hands-on experience with:
+- **Front-end development** → HTML, CSS, JavaScript  
+- **Responsive design & layout frameworks** → Bootstrap  
+- **Animations & interactivity** → AOS (Animate on Scroll)  
+- **Version control & workflow** → GitHub, VS Code  
+- **UI/UX & design principles** → Figma, Inkscape, GIMP  
 
-This repository shows my **progression throughout the course**, from early exercises to the final project.
+This repository demonstrates my **progression through the bootcamp**, from basic exercises to the final project.
 
 ---
 
 ## 🚀 How to Use
 
 1. Browse the folders by week to see exercises and projects completed.  
-2. Open the notebooks, spreadsheets, or dashboards to explore my work.  
+2. Open the HTML/CSS/JS files in a browser to view the results.  
 3. For the final project, check the `my-final-project` folder for full deliverables and explanations.
 
 ---
 
 ## 🌟 Career Goals
 
-I’m aiming for an **entry-level Data Analyst role**, where I can continue growing, applying my technical skills, and delivering actionable insights from day one.
+I’m aiming for an **entry-level Web Developer role**, where I can continue learning, applying my technical skills, and building interactive, user-friendly web experiences.
